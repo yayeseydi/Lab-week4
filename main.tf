@@ -23,7 +23,7 @@ locals {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami
 data "aws_ami" "debian" {
   most_recent = true
-  # NOTE: the starter used owners=["amazon"], but Debian images come from Debian’s account:
+
   owners = ["136693071363"] # Debian official
 
   filter {
